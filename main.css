@@ -23,7 +23,12 @@ body{
 	text-align: center;
 }
 
+@media(orientation:portrait){
+.carousel{
+	    transform: scale(0.395) translateX(-77.2%);
 
+}
+}
 /*Contact form code*/
 
 input[type=text], select, textarea {
@@ -210,7 +215,7 @@ input[type=submit]:hover {
 
 .contactInfo{
 	color: white;
-    background-image: url(images/slide-5.jpg);
+    background-image: url(img4.jpg);
     background-size: cover;
     width: 26%;
     height: 100%;
