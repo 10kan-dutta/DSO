@@ -1,0 +1,467 @@
+
+html{
+	scroll-behavior: smooth;
+   height: 100%;
+
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+@font-face{
+	font-family: 'century';
+	src: url(century.ttf);
+}
+
+
+
+/*OUR WORK*/
+.galleryHeader{
+	text-align: center;
+}
+
+
+/*Contact form code*/
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+/*Conatct page Font and text design*/
+.contactpage{
+	text-align: center;
+	margin-top: 2vw;
+}
+
+.contactpage p{
+	font-size:2vw;
+	text-shadow: 0px 1px 0.5px #000000;
+	margin:0;
+}
+
+/* Add a background color and some padding around the form */
+   
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: left;
+  width:45vw;
+  margin-left:2vw;
+
+}
+
+/*contactUs code*/
+.contactUs{
+	float: left;
+	width: 100%;
+}
+
+.form {
+	width: 55%;
+	float: left;
+}
+
+.map {
+	float: left;
+	width: 45%;
+}
+
+/*responsive code for the contactUs part*/
+
+@media screen and (max-width: 800px) {
+
+    .contactUs {
+        columns:1 80vw;
+		float: none;
+    }
+    .container {
+		  border-radius: 5px;
+		  background-color: #f2f2f2;
+		  padding: 20px;
+		  text-align: left;
+		  width:5 1vw;
+		  margin-left:4vw;
+		  margin-right:4vw;
+		  margin-bottom: 2vw;
+
+}
+	.form {
+			float: none;
+	}
+	.map {
+			float: none;
+	}
+	.contactpage p {
+		font-size: 4vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+   .contactUs {
+       columns:1 80vw;
+    }
+    .container {
+		  border-radius: 5px;
+		  background-color: #f2f2f2;
+		  padding: 20px;
+		  text-align: left;
+		  width: 81vw;
+		  margin-left:4.5vw;
+		  margin-right:4.5vw;
+		  margin-bottom:10vw;
+	}
+
+	.contactpage p {
+		font-size: 4vw;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*connect style*/
+
+.connect{
+	background-color: #626161;
+	position: relative;
+	width: 100vw;
+	height: 50vh; 
+	margin-top: 89vh;
+}
+
+.connectHead{
+	font-weight: bold;
+	font-family: sans-serif;
+	color: #ffffff;
+	opacity: 0.95;
+	position: absolute;
+	top: 10%;
+	left: 5%;
+}
+.connectHead::after{
+	width: 75%;
+	height: 1px;
+	content: '';
+	background-color: white;
+	position: absolute;
+	bottom: -0.2em;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.card-size{
+	width: 196px;
+	height: 200px;
+	color: white;
+	font-family: century;
+	box-shadow:5px 10px 8px #111;
+}
+
+/*facebook card*/
+.fb-card{
+	background-color:#4267b2;
+	position: absolute;
+	left: 33.5vw;
+	top: 38%;
+}
+
+.twitter-card{
+	position: absolute;
+	left: 74.3vw;
+	top: .5vh;
+	background-color: #1d93c7;
+}
+
+.contactInfo{
+	color: white;
+    background-image: url(img4.jpg);
+    background-size: cover;
+    width: 26%;
+    height: 100%;
+    left: 48vw;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: century;
+    font-size: 1.4vw;    
+    border: 1px solid white;
+}
+.contactInfotext{
+	padding: 45px;
+	position: absolute;
+}
+
+.icon-facebook{
+	display: inline-block;
+	background-image: url('fb.png');
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 19%;
+	left: 34%;
+	transform: translateX(-50%);
+	color: white;
+	font-family: century;
+}
+
+.fb-text{
+	position: absolute;
+	top: 45%;
+	left: 21%;
+}
+
+/*twitter card
+*/
+.icon-twitter{
+	display: inline-block;
+	background-image: url('twitter.png');
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 19%;
+	left: 34%;
+	transform: translateX(-50%);
+	color: white;
+	font-family: century;
+}
+
+.twitter-text{
+	position: absolute;
+	top: 45%;
+	left: 21%;
+}
+
+
+
+/*Respomsive code for connect us*/
+@media(orientation:portrait){
+	.connect{
+    height: 45vh;
+    margin-top: 0;
+	}
+
+	.connectHead{
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    font-size: 6vw;
+	}
+
+	.card-size{
+	width: 110px;
+    height: 130px;
+	}
+.fb-card{
+	 left: 1.5vw;
+    top: 43%;
+}
+
+.contactInfo{
+    width: 33%;
+    height: 46%;
+    left: 33vw;
+    position: absolute;
+    top: 11vh;
+    font-size: 2vw;
+}
+
+.twitter-card{
+	left: 67.3vw;
+    top: .5vh;
+}
+.fb-text{
+	position: absolute;
+    top: 35%;
+    left: 15%;
+    font-size: 4.5vw;
+}
+
+.icon-facebook{
+	top: 10%;
+    left: 33%;
+}	
+.icon-twitter{
+	top: 4%;
+}
+.twitter-text{
+	top: 29%;
+	left: 18%;
+}
+.contactInfotext{
+	padding: 2px;
+	font-size: 2.5vw;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/*Footer design*/
+#foot {
+    background-color: black;
+    display: flex;
+    height: 15vh;
+    position: relative;
+    font-family: century;
+    letter-spacing: 1vh;
+    float: left;
+    width: 100%;
+    top: 0vh;
+}
+
+.left {
+    flex: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+
+.mid {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right {
+    flex: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.m1 {
+    flex: 1;
+}
+
+.m2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.m3 {
+    flex: 1;
+}
+
+.follow {
+    text-align: center;
+    color: white;
+    flex: 1;
+    font-size: 3vh;
+}
+
+.icons {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.r1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 2.5vh;
+    color: #706d6c;
+}
+
+.fab {
+    color: white;
+    font-size: 3vh;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+}
+
+.fab:hover {
+    color: red;
+}
+.far{
+    color: white;
+    font-size: 3vh;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+}
+.far:hover {
+    color: red;
+}
+
+.ted{
+    display: flex;
+    flex-direction: row;
+    color:#706d6c;
+}
+.phone
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    #foot{
+    	flex-direction: column;
+    }
+}
+/*Footer design ends*/
+
+
+
