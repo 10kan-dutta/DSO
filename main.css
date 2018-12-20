@@ -30,6 +30,11 @@ body{
     left: 50%;
     color: rgba(0, 0, 0, 0.1) !important;
 }
+@media screen and (max-width: 600px) {
+  .headingTop {
+    font-size: 40px !important;
+  }
+}
 
 .headingToph3 {
     padding: 8px 20px;
@@ -62,12 +67,13 @@ body{
 
 #headtopworksh3 {
 	
-    margin: -1em 35em;
+    margin: 0em 35em;
+    top: -42px;
 }
 
 @media screen and (max-width: 600px) {
     #headtopworksh3 {
-        margin: 0 9em;
+        margin: 0 3em;
     }
 }
 
@@ -331,17 +337,29 @@ input[type=submit]:hover {
 
 /*facebook card*/
 .fb-card{
-	background-color:#4267b2;
-	position: absolute;
-	left: 33.5vw;
-	top: 38%;
+  background-color:#4267b2;
+  position: absolute;
+  left: 33.5vw;
+  top: 38%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.fb-card:hover {
+	transform: scale(1.2);
 }
 
 .twitter-card{
 	position: absolute;
-	left: 74.3vw;
+	left: 76vw;
 	top: .5vh;
 	background-color: #1d93c7;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.twitter-card:hover {
+  transform: scale(1.2);
 }
 
 .contactInfo{
@@ -358,7 +376,15 @@ input[type=submit]:hover {
     font-family: century;
     font-size: 1.4vw;    
     border: 1px solid white;
+    transition: 2s;
+    cursor: pointer;
 }
+
+.contactInfo:hover {
+  transform: scale(1.4);
+  z-index: 1999;
+}
+
 .contactInfotext{
 	padding: 45px;
 	position: absolute;
@@ -610,6 +636,19 @@ input[type=submit]:hover {
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
+@media screen and (max-width: 800px) {
+    .middle {
+      position: none;
+      top: 0%;
+      left: 0%;
+      transform: translate(0%,0%);
+    }
+    .back {
+      height: 53%;
+    }
+}
+
 .card{
   cursor: pointer;
   width: 340px;
@@ -663,4 +702,24 @@ input[type=submit]:hover {
 }
 .card:hover > .back{
   transform: perspective(600px) rotateY(0deg);
+}
+
+@media screen and (max-width: 600px) {
+  .back {
+    display: none;
+  }
+  
+  .card:hover > .front{
+    transform: perspective(0) rotateY(0deg);
+  }
+  .front {
+    height: 100%;
+    filter: grayscale(0);
+    transition: 2s;
+    right: 18%;
+  }
+.front:hover {
+  filter: grayscale(100%);
+  transform: scale(1.05);
+}
 }
